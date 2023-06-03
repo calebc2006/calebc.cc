@@ -1,17 +1,20 @@
 import Head from "next/head";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import TempScreen from "./temp";
 
-export default function Home() {
+export default function Index() {
     return (
         <>
             <Head>
                 <title>Home | calebc006</title>
             </Head>
 
-            <div>
+            {/* <div>
                 <h1 className="text-3xl font-bold">Welcome to the home page!</h1>
-            </div>
+            </div> */}
+
+            <TempScreen ></TempScreen>
         </>
     );
 }
