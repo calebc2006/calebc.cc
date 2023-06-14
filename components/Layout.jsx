@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <Head>
-                <link rel="icon" href="/vercel.svg" sizes="any" />
+                <link rel="icon" href="/logo.svg" sizes="any" />
             </Head>
 
             <Navbar />

@@ -5,7 +5,22 @@ module.exports = {
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            spacing: {
+                128: "32rem",
+                144: "36rem",
+            },
+            borderRadius: {
+                "4xl": "2rem",
+            },
+            fontSize: {
+                "5xl": ["7rem", "7.5rem"],
+            },
+            fontFamily: {
+                sans: ["Montserrat", "sans-serif"],
+                serif: ["Merriweather", "serif"],
+            },
+        },
     },
     plugins: [require("daisyui")],
 };

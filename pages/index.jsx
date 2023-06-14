@@ -9,12 +9,16 @@ export default function Index() {
             <Head>
                 <title>Home | calebc006</title>
             </Head>
+            
+            <section id='name' className="mx-10 mt-10 h-screen relative">
+                <div className="border-b-4 pb-10 min-w-[90%] top-[10%] absolute">
+                    <h1 className="text-5xl font-bold font-sans select-none">Caleb's<br></br>Blog</h1>
+                </div>
+            </section>
 
-            {/* <div>
-                <h1 className="text-3xl font-bold">Welcome to the home page!</h1>
-            </div> */}
-
-            <TempScreen ></TempScreen>
+            <section>
+                <TempScreen></TempScreen>
+            </section>
         </>
     );
 }
