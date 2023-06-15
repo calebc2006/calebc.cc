@@ -1,10 +1,9 @@
 import React from "react";
+import TempScreen from "./temp";
 
 const BlogPage = () => {
     return (
-        <div className="mx-7 my-5">
-            Blog Page
-        </div>
+        <TempScreen></TempScreen>
     );
 };
 
