@@ -14,7 +14,7 @@ module.exports = {
                 "4xl": "2rem",
             },
             fontSize: {
-                "5xl": ["7rem", "7.5rem"],
+                "5xl": ["5rem", "5.5rem"],
             },
             fontFamily: {
                 sans: ["Montserrat", "sans-serif"],

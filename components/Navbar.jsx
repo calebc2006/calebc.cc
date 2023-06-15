@@ -5,8 +5,8 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <>
-    <div className="sticky top-0 py-5 px-4 flex justify-center bg-gray-800 bg-opacity-85 z-10">
-      <div className="flex-1 mx-8">
+    <div className="sticky top-0 w-screen py-5 px-4 flex justify-center bg-gray-800 bg-opacity-85 z-10">
+      <div className="flex-1 mx-8 flex items-center">
         <Link href="/" className="normal-case text-xl select-none">CALEBC006</Link>
       </div>
       <div className="flex-none py-0 h-300">
