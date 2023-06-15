@@ -19,8 +19,8 @@ export default function Index() {
                 <div className="h-full w-full px-[5rem] pt-10 relative max-w-[800px]">
                     <h1 className="font-mono text-4xl">About</h1>  
                     <p className="font-mono mt-7 text-l">
-                        I'm Caleb Chia, a 17 year old student, programmer and math enthusiast in Singapore.<br></br><br></br>
-                        Currently I'm studying in ACSI, graduating 2024.<br></br><br></br>
+                        I&apos;m Caleb Chia, a 17 year old student, programmer and math enthusiast in Singapore.<br></br><br></br>
+                        Currently I&apos;m studying in ACSI, graduating 2024.<br></br><br></br>
                         I love physics and math above all. I also have experience with Competitive Programming and simple dev work and recently started doing CTFs. 
                     </p>
                 </div>
