@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
             <Head>
                 <link rel="icon" href="/logo.svg" sizes="any" />
             </Head>
-
+            
             <Navbar />
 
             {children}
