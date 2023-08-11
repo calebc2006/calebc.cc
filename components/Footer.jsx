@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="footer h-[120px] p-3">
+    <div className="footer h-[120px] p-3 bottom-0">
         <div className="min-w-[200px] flex">
             Source Repo:
             <a
