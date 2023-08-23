@@ -1,5 +1,5 @@
 import React from "react";
-import TempScreen from "./temp";
+import TempScreen from "@/components/TempScreen";
 
 const BlogPage = () => {
     return (
