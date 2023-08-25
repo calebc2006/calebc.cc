@@ -24,42 +24,34 @@ function Title() {
 
 function About() {
     return (
-        <section id='about' className="m-0 p-0 h-screen w-full pt-[76px] translate-y-[-76px]">
+        <section id='about' className="m-0 p-0 w-full pt-[76px] translate-y-[-76px]">
             <div className="w-full px-[8%] pt-10 pb-10 relative max-w-[800px]">
                 <h1 className="font-mono mt-3 mb-7 text-4xl">About</h1>  
-                <p className="font-mono text-l">
-                    I&apos;m Caleb, a 17 year old student, programmer and math enthusiast in Singapore.<br></br><br></br>
-                    Currently I&apos;m studying in ACSI, graduating 2024.<br></br><br></br>
+                <p className="font-mono text-m">
+                    I&apos;m Caleb, a 17 year old student, programmer and math enjoyer in Singapore.<br/><br/>
+                    Currently I&apos;m studying in ACSI, graduating 2024.<br/><br/>
                     I love physics and math above all. I also have experience with Competitive Programming, simple dev work and recently started doing CTFs, specialising in Crypto and Forensics. 
                 </p>
             </div>
             
-            <div className="w-full px-[8%] pt-10 pb-10 relative max-w-[800px]">
+            <div className="w-full px-[8%] pb-10 relative max-w-[800px] mb-20">
                 <h1 className="font-mono mt-3 mb-7 text-4xl">Links</h1>
                 <div className="flex flex-col">
-                    <Github></Github>
-                    <Twitter></Twitter>
-                    
+                    <LinkToSite name='Github' link='https://github.com/calebc2006' icon='fa-github'/>
+                    <LinkToSite name='Twitter' link='https://twitter.com/calebc006' icon='fa-twitter'/>
                 </div>
             </div>
         </section>
     )
 }
 
-const Github = () => {
+const LinkToSite = ({name, link, icon}) => {
     return (
-        <Link className='mb-2' href='https://github.com/calebc2006' target='_blank'>
-            <i className="fa-brands fa-github mr-4 ml-2 font text-l"></i>
-            GitHub
-        </Link>
-    )
-}
-
-const Twitter = () => {
-    return (
-        <Link className='' href='https://twitter.com/calebc006' target='_blank'>
-            <i className="fa-brands fa-twitter mr-4 ml-2 font text-l"></i>
-            Twitter
+        <Link className='mb-2 flex' href={`${link}`} target='_blank'>
+            <i className={`fa-brands ${icon} mr-4 ml-1 font text-m`} />
+            <div className='hover:underline'>
+                {name}
+            </div>
         </Link>
     )
 }
