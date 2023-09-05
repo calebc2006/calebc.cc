@@ -1,8 +1,7 @@
-import React from "react";
-import Link from "next/link";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from "react"
+import Link from "next/link"
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <>
     <div className="sticky top-0 w-full py-5 px-4 flex bg-gray-800 bg-opacity-90 backdrop-blur-sm z-10">
@@ -23,6 +22,5 @@ const Navbar = () => {
     </div>
     </>
     
-  );
-};
-export default Navbar;
+  )
+}

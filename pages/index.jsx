@@ -1,5 +1,6 @@
-import Head from "next/head";
-import MainBody from "@/components/MainBody";
+import Head from "next/head"
+import HomePageBody from "@/components/HomePageBody"
+import { Layout } from "@/components/Layout"
 
 export default function Index() {
     return (
@@ -8,7 +9,9 @@ export default function Index() {
                 <title>Home | calebc006</title>
             </Head>
 
-            <MainBody></MainBody>
+            <Layout>
+                <HomePageBody />
+            </Layout>
             
         </>
     );
