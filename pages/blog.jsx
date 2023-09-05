@@ -1,9 +1,12 @@
-import React from "react";
-import TempScreen from "@/components/TempScreen";
+import React from "react"
+import { TempScreen } from "@/components/TempScreen"
+import { Layout } from "@/components/Layout"
 
 const BlogPage = () => {
     return (
-        <TempScreen></TempScreen>
+        <Layout>
+            <TempScreen />
+        </Layout>
     );
 };
 

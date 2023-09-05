@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function MainBody() {
+export default function HomePageBody() {
   return (
     <div className="flex-1 p-0">
         <Title></Title>
@@ -10,7 +10,7 @@ export default function MainBody() {
   )
 }
 
-function Title() {
+const Title = () => {
     return (
         <section id='title' className="m-0 p-0 h-screen w-full translate-y-[-76px] bg-slate-700 pt-[76px]">
             <div className="h-full w-full px-[8%] pb-10 relative flex flex-col justify-center">
@@ -22,9 +22,9 @@ function Title() {
     )
 }
 
-function About() {
+const About = () => {
     return (
-        <section id='about' className="m-0 p-0 w-full pt-[76px] translate-y-[-76px]">
+        <section id='about' className="m-0 p-0 w-full min-h-screen pt-[76px] translate-y-[-76px]">
             <div className="w-full px-[8%] pt-10 pb-10 relative max-w-[800px]">
                 <h1 className="font-mono mt-3 mb-7 text-4xl">About</h1>  
                 <p className="font-mono text-m">
@@ -34,7 +34,7 @@ function About() {
                 </p>
             </div>
             
-            <div className="w-full px-[8%] pb-10 relative max-w-[800px] mb-20">
+            <div className="w-full px-[8%] relative max-w-[800px] mb-20">
                 <h1 className="font-mono mt-3 mb-7 text-4xl">Links</h1>
                 <div className="flex flex-col">
                     <LinkToSite name='Github' link='https://github.com/calebc2006' icon='fa-github'/>

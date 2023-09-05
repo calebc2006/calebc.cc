@@ -1,8 +1,7 @@
-import React from "react";
-import Link from "next/link";
-// import styles from "../styles/nav.module.css";
+import React from "react"
+import Link from "next/link"
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <div className="footer h-[120px] p-3 bottom-0 bg-slate-700">
         <div className="min-w-[200px] flex">
@@ -19,4 +18,3 @@ const Footer = () => {
     </div>
   );
 };
-export default Footer;

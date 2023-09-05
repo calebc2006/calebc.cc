@@ -1,4 +1,4 @@
-export default function TempScreen() {
+export const TempScreen = () => {
     return (
         <div className="mx-12 my-10 h-screen">
             <h1 className="text-3xl font-bold my-3">There will be something here eventually</h1>
