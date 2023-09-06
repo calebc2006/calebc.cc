@@ -28,7 +28,7 @@ const PostLinks = ({ previews }) => {
     return (
         <ul className="flex flex-col pl-1">
             {previews.map((prop) => (
-                <li>
+                <li key={prop.slug}>
                     <PostLink previewProps={prop}/>
                 </li>
             ))}
