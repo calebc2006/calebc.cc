@@ -7,3 +7,5 @@ export default function Slug({Component, pageProps}) {
         </>
     );
 }
+
+// idk
