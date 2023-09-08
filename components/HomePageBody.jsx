@@ -27,7 +27,7 @@ const About = () => {
         <section id='about' className="pt-[64px] translate-y-[-64px]">
             <div className="w-full px-[8%] pt-10 pb-8 relative max-w-[800px]">
                 <h1 className="font-mono mt-3 mb-7 text-4xl">About</h1>  
-                <p className="font-mono text-m">
+                <p className="font-sans text-m">
                     Hi, I&apos;m Caleb - a 17 year old student, programmer and physics enthusiast in Singapore.
                     I&apos;m currently studying in ACSI, graduating 2024.<br/><br/>
                     I love physics and math above all. I also have experience with Competitive Programming, Machine Learning, 
