@@ -12,9 +12,12 @@ module.exports = {
             },
 
             fontSize: {
-                "5xl": ["5rem", "5.5rem"],
+                "5xl": ["4.3rem", "4.75rem"],
                 "4xl": ["2.5rem", "2.5rem"],
-                m: ["1.2rem", "1.4rem"],
+                "2xl": ["1.5rem", "1.8rem"],
+                m: ["0.9rem", "1.1rem"],
+                s: ["0.7rem", "0.85rem"],
+                sm: ["0.6rem", "0.7rem"],
             },
             fontFamily: {
                 sans: ["Montserrat", "sans-serif"],
@@ -23,4 +26,4 @@ module.exports = {
         },
     },
     plugins: [require("daisyui")],
-};
+}

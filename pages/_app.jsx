@@ -7,8 +7,14 @@ export default function app({Component, pageProps}) {
     return (
         <>  
             <Head>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <meta charSet="UTF-8"/>
+                <meta name="description" content="Caleb's Website and Blog"/>
+                <meta name="keywords" content="calebc006, Caleb, Caleb's, Chia, CalebChia, CalebChia223,
+                                               calebc2006, Blog, Website, "/>
+                <meta name="author" content="Caleb Chia"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             </Head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity={process.env.FONTAWESOME_CDNKEY} crossOrigin="anonymous" referrerPolicy="no-referrer" />
 
             <Component {...pageProps} />
         </>

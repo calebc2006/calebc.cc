@@ -1,0 +1,6 @@
+<!-- Fill in environmental variables and rename this file as '.env' -->
+
+WORDPRESS_API_URL=
+DEFAULT_FEATURED_IMAGE_URL=
+
+FONTAWESOME_CDNKEY=

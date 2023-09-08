@@ -7,8 +7,8 @@ import { getPostPreviews } from "@/lib/FetchContent";
 export default function BlogPage({ previews }){
     return (
         <Layout>
-            <section className="mx-12 mt-10 h-screen translate-y-[-76px] pt-[76px]">
-                <h1 className="text-4xl mb-8">Posts</h1>
+            <section id="top" className="mx-[8%] translate-y-[-64px] pt-[64px]">
+                <h1 className="text-4xl mt-10 mb-8">Posts</h1>
                 <PostLinks previews={previews} />
             </section>
         </Layout>
@@ -26,7 +26,7 @@ export async function getStaticProps() {
 
 const PostLinks = ({ previews }) => {
     return (
-        <ul className="flex flex-col">
+        <ul className="flex flex-col gap-y-6 mb-10">
             {previews.map((prop) => (
                 <li key={prop.slug}>
                     <PostLink previewProps={prop}/>

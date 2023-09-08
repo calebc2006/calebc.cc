@@ -1,8 +1,10 @@
 import { useRouter } from "next/router"
+import Link from "next/link"
 
 import { Loading, PageNotFound } from "@/components/PageNotFound"
 import { Layout } from "@/components/Layout"
 import { getAllSlugs, getPost } from "@/lib/FetchContent"
+import { parseDate } from "@/lib/utils"
 
 export default function Slug({ post }) {
 
@@ -28,12 +30,20 @@ export default function Slug({ post }) {
     else return (
         // Page exists
         <Layout>
-            <section className="w-full h-screen translate-y-[-76px] pt-[76px] pl-10">
-                <h1 className="text-4xl p-10 pl-0">{ post.title }</h1>
+            <div>
+                <Link href='/blog'>
+                    <div className='flex gap-x-2.5 hover:scale-[103%] w-[140px] mt-5 ml-[4%]'>
+                        <i className='fa-solid fa-arrow-left align-middle text-l mt-[3px]'/>
+                        <h1 className="text-l font-sans">All Posts</h1>  
+                    </div>
+                </Link>
+                <section className="w-full px-[8%]">
+                    <h1 className="text-4xl pt-10 pb-5 pl-0">{ post.title }</h1>
+                    <p className="font-mono text-l pl-1">DATE OF POST: {parseDate(post.date)}</p>   
 
-                {/* HERE IS WHERE TO DISPLAY THE CONTENT */}
-                <p>DATE OF POST: {post.date}</p>   
-            </section>
+                    {/* HERE IS WHERE TO DISPLAY THE CONTENT */}
+                </section>
+            </div>
         </Layout>
     )
 }

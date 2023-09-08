@@ -11,9 +11,10 @@ export const Layout = ({ children }) => {
                 <link rel="icon" href="/logo.svg" sizes="any" />
             </Head>
             
-            <Navbar />
-
-            {children}
+            <div className="min-h-screen">
+                <Navbar />
+                {children}
+            </div>
 
             <Footer />
         </>
