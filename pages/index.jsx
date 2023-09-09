@@ -5,11 +5,7 @@ import { Layout } from "@/components/Layout"
 export default function Index() {
     return (
         <>
-            <Head>
-                <title>Home | calebc006</title>
-            </Head>
-
-            <Layout>
+            <Layout title={'Home | calebc.cc'}>
                 <HomePageBody />
             </Layout>
             

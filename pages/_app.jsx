@@ -1,7 +1,7 @@
 import Head from "next/head"
 import "../styles/globals.css"
+import "@/styles/post.css"
 
-import * as dotenv from 'dotenv'
 
 export default function app({Component, pageProps}) {
     return (

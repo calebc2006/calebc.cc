@@ -3,13 +3,19 @@ import { Layout } from "@/components/Layout"
 import { PostLink } from "@/components/PostLink";
 
 import { getPostPreviews } from "@/lib/FetchContent";
+import Link from "next/link";
 
-export default function BlogPage({ previews }){
+export default function PostsPage({ previews }){
     return (
-        <Layout>
-            <section id="top" className="mx-[8%] translate-y-[-64px] pt-[64px]">
-                <h1 className="text-4xl mt-10 mb-8">Posts</h1>
+        <Layout title='Posts | calebc.cc'>
+            <section id="top" className="mx-[8%] translate-y-[-61px] pt-[61px]">
+                <h1 className="text-3xl mt-14">{`All Posts (${previews.length})`}</h1>
+                <div className="divider mt-2 mb-6"></div>
+
                 <PostLinks previews={previews} />
+                <div className="divider mt-2 mb-6"></div>
+
+                <ReturnToTop />
             </section>
         </Layout>
     )
@@ -33,5 +39,16 @@ const PostLinks = ({ previews }) => {
                 </li>
             ))}
         </ul>
+    )
+}
+
+const ReturnToTop = () => {
+    return (
+        <Link href="/posts#top" scroll={false}>
+            <div className="select-none font-bold hover:scale-105 w-fit">
+                <i className="fa-solid fa-arrow-up" />
+                &nbsp;&nbsp;Back To Top
+            </div>
+        </Link>
     )
 }

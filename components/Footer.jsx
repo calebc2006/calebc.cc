@@ -10,7 +10,7 @@ export const Footer = () => {
                 href="https://www.github.com/calebc2006/calebc.cc"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline"
+                className="hover:underline"
             >
                 GitHub
             </Link>

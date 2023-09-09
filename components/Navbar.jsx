@@ -4,18 +4,18 @@ import Link from "next/link"
 export const Navbar = () => {
   return (
     <>
-    <div className="sticky top-0 h-[64px] w-full py-4 px-4 flex bg-gray-800 bg-opacity-90 backdrop-blur-sm z-10">
-      <div className="mx-8 flex items-center">
+    <div className="sticky top-0 w-full py-3 px-4 flex bg-gray-800 bg-opacity-90 backdrop-blur-sm z-10">
+      <div className="ml-7 mr-6 w-fit flex items-center hover:scale-105 cursor-pointer">
         <i className="fa-solid fa-house mr-4 text-l"></i>
-        <Link href="/#title" scroll={false} className="normal-case text-m select-none font-bold">calebc006</Link>
+        <Link href="/#title" scroll={false} className="text-l select-none font-bold">calebc006</Link>
       </div>
-      <div className="flex-none py-0 h-300">
+      <div className="flex-none h-300">
         <ul className="menu menu-horizontal mx-5 p-0 h-full">
           <li>
-            <Link href="/#about" scroll={false} className="text-m">About</Link>
+            <Link href="/#about" scroll={false} className="text-m hover:font-bold">About</Link>
           </li>
           <li>
-            <Link href="/blog#top" scroll={false} className="text-m">Blog</Link>
+            <Link href="/posts" scroll={false} className="text-m hover:font-bold">Posts</Link>
           </li>
         </ul>
       </div>
